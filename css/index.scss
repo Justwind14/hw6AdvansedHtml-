@@ -241,25 +241,25 @@ img {
 
     &__photo1 {
         height: 260px;
-        background-image: url(img/bgi1.png);
+        background-image: url(../img/bgi1.png);
         @include content_photos_position;
     }
 
     &__photo2 {
         height: 260px;
-        background-image: url(img/bgi2.png);
+        background-image: url(../img/bgi2.png);
         @include content_photos_position;
     }
 
     &__photo3 {
         height: 260px;
-        background-image: url(img/bgi3.png);
+        background-image: url(../img/bgi3.png);
         @include content_photos_position;
     }
 
     &__photo4 {
         height: 180px;
-        background-image: url(img/bgi4.png);
+        background-image: url(../img/bgi4.png);
         @include content_photos_position;
     }
 

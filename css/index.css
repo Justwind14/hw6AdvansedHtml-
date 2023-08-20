@@ -202,7 +202,7 @@ img {
 }
 .content_photo__photo1 {
   height: 260px;
-  background-image: url(img/bgi1.png);
+  background-image: url(../img/bgi1.png);
   background-position: center center;
   background-repeat: no-repeat;
   display: flex;
@@ -212,7 +212,7 @@ img {
 }
 .content_photo__photo2 {
   height: 260px;
-  background-image: url(img/bgi2.png);
+  background-image: url(../img/bgi2.png);
   background-position: center center;
   background-repeat: no-repeat;
   display: flex;
@@ -222,7 +222,7 @@ img {
 }
 .content_photo__photo3 {
   height: 260px;
-  background-image: url(img/bgi3.png);
+  background-image: url(../img/bgi3.png);
   background-position: center center;
   background-repeat: no-repeat;
   display: flex;
@@ -232,7 +232,7 @@ img {
 }
 .content_photo__photo4 {
   height: 180px;
-  background-image: url(img/bgi4.png);
+  background-image: url(../img/bgi4.png);
   background-position: center center;
   background-repeat: no-repeat;
   display: flex;
