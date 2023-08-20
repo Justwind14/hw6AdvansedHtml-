@@ -1,0 +1,8 @@
+@mixin content_photos_position {
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
