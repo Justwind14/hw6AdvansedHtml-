@@ -438,26 +438,22 @@ img {
     color: $mainElementsColor; 
     }
 
-}
-
-    // ползунок
-
-      
-
-    .offer_details__slider {
+        // ползунок
+        
+    &__slider {
         -webkit-appearance: none;
         width: 100px;
         height: 10px;
         background-color: #F8F3F4;;
         outline: none;
         
-      }
-
-    .offer_details__choose_box.specl {
-       padding-bottom: 11px;
-      }
-      
-      .offer_details__slider::-webkit-slider-thumb {
+    }
+    
+    &__choose_box.specl {
+        padding-bottom: 11px;
+    }
+    
+    &__slider::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
         width: 20px;
@@ -467,6 +463,9 @@ img {
         border-radius: 50%;
       }
       
+}
+
+
 
 
 

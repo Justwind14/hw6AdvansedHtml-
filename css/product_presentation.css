@@ -361,7 +361,6 @@ img {
 .offer_details__lists:checked + label {
   color: #F16D7F;
 }
-
 .offer_details__slider {
   -webkit-appearance: none;
   width: 100px;
@@ -369,11 +368,9 @@ img {
   background-color: #F8F3F4;
   outline: none;
 }
-
 .offer_details__choose_box.specl {
   padding-bottom: 11px;
 }
-
 .offer_details__slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
