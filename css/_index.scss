@@ -1,4 +1,5 @@
-
+@import 'vars';
+@import 'mixins';
 
 
 
@@ -28,6 +29,7 @@
 .top_text {
     margin-left: 16px;
     align-items: center;
+
     &__top_title {
         text-align: left;
         color: #222;
@@ -107,7 +109,7 @@
     }
 }
 
-.long_picture{
+.long_picture {
     grid-column: span 3;
 }
 
@@ -141,7 +143,7 @@
 
 /* content_items */
 
-.content_items{
+.content_items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -176,7 +178,7 @@
         font-weight: 300;
         line-height: normal;
     }
-    
+
     &__price {
         color: $mainElementsColor;
         font-size: 16px;
@@ -193,7 +195,7 @@
 
 .button_place {
     position: absolute;
-    opacity:0; 
+    opacity: 0;
 
     &__basket {
         display: flex;
@@ -215,20 +217,20 @@
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;     
+        line-height: normal;
     }
 }
 
 .button_place:hover .item_image {
-    filter: brightness(0.5); 
+    filter: brightness(0.5);
 }
 
 .item_image:hover {
-    filter: brightness(0.5); 
+    filter: brightness(0.5);
 }
 
 .pseudo:hover .button_place {
-    opacity:1; 
+    opacity: 1;
     top: 44%;
     left: 32%;
 }
@@ -251,12 +253,19 @@
         font-weight: 400;
         line-height: normal;
         border-style: solid;
+
+        &:hover {
+            background-color: $mainElementsColor;
+            color: #FFF;
+        }
+
+        &:active {
+            background-color: #fff;
+            color: $mainElementsColor;
+            border: 1px solid $mainElementsColor;
+        }
     }
 
-    &__button:hover {
-        background-color: $mainElementsColor;
-        color: #FFF;
-    }
 }
 
 
@@ -299,10 +308,11 @@
     &__icon1 {
         margin-bottom: 28px;
     }
-    
+
     &__icon2 {
         margin-bottom: 19px;
     }
+
     &__icon3 {
         margin-bottom: 25px;
     }
@@ -366,7 +376,7 @@
             font-size: 24px;
             font-style: normal;
             font-weight: 700;
-            line-height: 167.2%; 
+            line-height: 167.2%;
             padding-top: 40px;
         }
 
@@ -387,6 +397,7 @@
             height: 49px;
             border: none;
             padding-left: 22px;
+            @include fields_hover_and_focus;
         }
 
         &__button {
@@ -403,6 +414,7 @@
             font-weight: 400;
             line-height: normal;
             border: none;
+            @include reverse_buttons_hover_and_active;
         }
     }
 }
@@ -410,13 +422,13 @@
 
 
 
-                                            /* TABLET */
+/* TABLET */
 
 
 
-                                            
+
 @media (min-width: 726px) and (max-width: 1024px) {
-    
+
     .center {
         padding-left: calc(50% - 367px);
         padding-right: calc(50% - 367px);
@@ -434,7 +446,7 @@
 
     .top {
         padding-left: calc(50% - 367px);
-        padding-right: calc(50% - 367px);  
+        padding-right: calc(50% - 367px);
         max-height: 384px;
 
         &__brand_info {
@@ -444,10 +456,10 @@
             align-self: center;
             padding-top: 138px;
             padding-left: 67px;
-            padding-bottom: 151.5px;   
+            padding-bottom: 151.5px;
         }
     }
-    
+
 
     .top_text {
         &__top_title {
@@ -476,11 +488,11 @@
         &__title {
             margin-bottom: 3.3px;
         }
-    
+
     }
 
-  
-    .content_items{
+
+    .content_items {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
@@ -510,7 +522,7 @@
         &.center {
             padding-left: calc(50% - 180px);
             padding-right: calc(50% - 180px);
-        } 
+        }
 
         &__item {
             padding-top: 0;
@@ -524,7 +536,7 @@
             line-height: normal;
             max-width: 310px;
         }
-    
+
     }
 
 
@@ -563,8 +575,8 @@
             padding-bottom: 140px;
         }
     }
-    
-  
+
+
     .footer {
         padding-left: calc(50% - 352px);
         padding-right: calc(50% - 352px);
@@ -579,7 +591,7 @@
 
 
 
-                                           /* PHONE */
+/* PHONE */
 
 
 
@@ -588,17 +600,20 @@
     .header {
         padding-left: calc(50% - 148px);
         padding-right: calc(50% - 148px);
+
         &__left_nav {
             margin-top: 18px;
             margin-bottom: 18px;
         }
+
         &__right_nav {
             margin-top: 25px;
             margin-bottom: 26px;
         }
     }
 
-    .basket_shower__icon, .header__right_nav__person_icon {
+    .basket_shower__icon,
+    .header__right_nav__person_icon {
         display: none;
     }
 
@@ -675,7 +690,7 @@
         &__photo4 {
             height: 111px;
         }
-        
+
     }
 
     .titled_block {
@@ -697,7 +712,7 @@
         padding-left: 16px;
         padding-top: 24px;
         padding-bottom: 20px;
-        padding-right: 28px;    
+        padding-right: 28px;
     }
 
     .explore__button {
@@ -714,9 +729,9 @@
         &.center {
             padding-left: calc(50% - 152px);
             padding-right: calc(50% - 152px);
-        } 
+        }
 
-       &__item {
+        &__item {
             padding-top: 0;
             padding-bottom: 0;
         }
@@ -796,8 +811,8 @@
             }
         }
     }
-    
-    
+
+
     .footer {
         padding-left: calc(50% - 140px);
         padding-right: calc(50% - 140px);
@@ -834,14 +849,14 @@
         padding-left: calc(50% - 558px);
         padding-right: calc(50% - 558px);
     }
-    
-    &__title{
+
+    &__title {
         color: $mainElementsColor;
         padding-top: 60px;
         padding-bottom: 60px;
     }
 
-    &__bread_crumbs{
+    &__bread_crumbs {
         display: flex;
         gap: 5px;
         font-size: 14px;
@@ -850,9 +865,9 @@
         letter-spacing: 0em;
         text-align: left;
         padding-top: 65px;
-        padding-bottom: 65px;  
+        padding-bottom: 65px;
     }
-    
+
     &__link {
         color: #636363;
         font-size: 14px;
@@ -871,7 +886,7 @@
         line-height: 17px;
         letter-spacing: 0em;
         text-align: left;
-        
+
     }
 
 }

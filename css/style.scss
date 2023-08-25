@@ -3,10 +3,12 @@
 @import 'catalog';
 @import 'product_presentation';
 @import 'index';
+@import 'basket';
 
 * {
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
 html {
@@ -29,7 +31,7 @@ a {
 
 .button_place {
     position: absolute;
-    opacity:0; 
+    opacity: 0;
 }
 
 img {
@@ -37,7 +39,7 @@ img {
     vertical-align: middle;
     max-width: 100%;
     height: auto;
-  }
+}
 
 
 .center {
@@ -62,17 +64,18 @@ img {
     padding-left: calc(50% - 558px);
     padding-right: calc(50% - 558px);
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
     background-color: #222;
 
     &__left_nav {
         margin-top: 18px;
         margin-bottom: 19px;
 
-            &__searcher {
+        &__searcher {
             margin-left: 41px;
-            }       
+        }
     }
+
     &__right_nav {
         display: flex;
         margin-top: 26px;
@@ -80,12 +83,15 @@ img {
 
         &__special_img {
             padding-top: 4px;
+            cursor: pointer;
         }
 
         &__person_icon {
             margin-left: 25px;
             margin-right: 42px;
         }
+
+
     }
 }
 
@@ -123,19 +129,19 @@ img {
     box-shadow: #696868;
     height: 634px;
     min-width: $widthBurgerMenu;
-    right: -($widthBurgerMenu+20px); 
+    right: -($widthBurgerMenu+20px);
     box-shadow: 16px 4px 35px 0px #00000036;
-    background-color:white;
+    background-color: white;
 }
 
 .header_menu {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     position: absolute;
     z-index: 46;
     right: 0;
     top: 0;
-    width: $widthBurgerMenu;   
+    width: $widthBurgerMenu;
 
     &__title {
         color: #000;
@@ -169,6 +175,10 @@ img {
         line-height: normal;
         margin-bottom: 11px;
         padding-left: 54px;
+
+        &:hover {
+            color: $mainElementsColor;
+        }
     }
 
 }
@@ -222,4 +232,3 @@ img {
 .footer__socials__link:hover .socials__icon2 path {
     fill: #FFF;
 }
-

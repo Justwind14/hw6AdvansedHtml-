@@ -6,3 +6,55 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin buttons_hover_and_active {
+    &:hover {
+        cursor: pointer;
+        border-color: $mainElementsColor;
+        color: $mainElementsColor;
+    }
+
+    &:active {
+        background-color: $mainElementsColor;
+        color: #fff;
+    }
+}
+
+@mixin reverse_buttons_hover_and_active {
+    &:hover {
+        cursor: pointer;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+
+    &:active {
+        background-color: #fff;
+        color: $mainElementsColor;
+        border: 1px solid $mainElementsColor;
+    }
+
+
+}
+
+@mixin fields_hover_and_focus {
+
+    &:hover {
+        border-color: $mainElementsColor;
+    }
+
+    &:focus {
+        border-color: $mainElementsColor;
+        outline: 1px solid $mainElementsColor;
+    }
+
+}
+
+// размеры
+
+@mixin left_basket_part_size {
+    width: 652px;
+}
+
+@mixin right_basket_part_size {
+    width: 360px;
+}
