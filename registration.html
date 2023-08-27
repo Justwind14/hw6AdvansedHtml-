@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basket</title>
+    <title>Registration</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,7 +62,8 @@
                         <div class="basket_shower">
                             <div class="basket_shower__counter">5</div>
                             <div>
-                                <a class="basket_shower__icon" href="#"><img src="img/basket_nav.svg" alt="basket"></a>
+                                <a class="basket_shower__icon" href="basket.html"><img src="img/basket_nav.svg"
+                                        alt="basket"></a>
                             </div>
                         </div>
 
@@ -70,92 +71,57 @@
                 </header>
             </div>
             <section class="under_head center">
-                <h1 class="under_head__title">SHOPPING CART</h1>
+                <h1 class="under_head__title">REGISTRATION</h1>
             </section>
         </section>
 
         <section class="main_content">
-            <section class="preparation_for_purchase center">
-                <div class="left_basked_side">
-                    <section class="basket_goods_list">
-                        <figure class="basket_item item_1">
-                            <img src="img/basket_item1.jpg" alt="basket_item1">
-                            <div class="basket_item__description">
-                                <div class="basket_item__description__top_part">
-                                    <figcaption>MANGO PEOPLE T-SHIRT</figcaption>
-                                    <svg class="basket_item__cross" xmlns="http://www.w3.org/2000/svg" width="18"
-                                        height="18" viewBox="0 0 18 18" fill="none">
-                                        <path
-                                            d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"
-                                            fill="#575757" />
-                                    </svg>
-                                </div>
-                                <div class="basket_item__description__bottom_part">
-                                    <p class="basket_item__product_characteristics">Price: <span
-                                            class="basket_item__basket_price">$300</span></p>
-                                    <p class="basket_item__product_characteristics">Color: Red</p>
-                                    <p class="basket_item__product_characteristics">Size: Xl </p>
-                                    <p class="basket_item__product_characteristics">Quantity: <input
-                                            class="basket_item__window_count" type="number" value="2"></p>
+            <section class="registration center">
+                <form class="left_side left_side_padding">
+                    <h4 class="registration__title">Your Name</h4>
+                    <input class="registration__data" type="text" placeholder="First Name" required>
+                    <input class="registration__data" type="text" placeholder="Last Name" required>
 
-                                </div>
-                            </div>
-                        </figure>
-                        <figure class="basket_item item_2">
-                            <img src="img/basket_item2.jpg" alt="basket_item1">
-                            <div class="basket_item__description">
-                                <div class="basket_item__description__top_part">
-                                    <figcaption>MANGO PEOPLE T-SHIRT</figcaption>
-                                    <svg class="basket_item__cross" xmlns="http://www.w3.org/2000/svg" width="18"
-                                        height="18" viewBox="0 0 18 18" fill="none">
-                                        <path
-                                            d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"
-                                            fill="#575757" />
-                                    </svg>
-                                </div>
-                                <div class="basket_item__description__bottom_part">
-                                    <p class="basket_item__product_characteristics">Price: <span
-                                            class="basket_item__basket_price">$300</span></p>
-                                    <p class="basket_item__product_characteristics">Color: Red</p>
-                                    <p class="basket_item__product_characteristics">Size: Xl </p>
-                                    <p class="basket_item__product_characteristics">Quantity: <input
-                                            class="basket_item__window_count" type="number" value="2"></p>
-                                </div>
-                            </div>
-                        </figure>
-                    </section>
-                    <section class="basket_menu">
-                        <a class="basket_menu__options option1" href="#">CLEAR SHOPPING CART</a>
-                        <a class="basket_menu__options option2" href="catalog.html">CONTINUE SHOPPING</a>
-                    </section>
-                </div>
-                <div class="right_basket_side">
-                    <section class="shipping_select">
-                        <h2 class="shipping_select__title">SHIPPING ADDRESS</h2>
-                        <Form class="shipping_select__box" action="#">
-                            <input class="shipping_select__field field1" type="text" placeholder="Bangladesh" required>
-                            <input class="shipping_select__field field2" type="text" placeholder="State" required>
-                            <input class="shipping_select__field field3" type="text" placeholder="Postcode / Zip"
-                                required>
-                            <button class="shipping_select__button this" type="submit">GET A QUOTE</button>
-                        </Form>
-                    </section>
+                    <div class="registration__required">
+                        <input class="registration__radio" type="radio" id="sex1" name="choise" required>
+                        <label for="sex1">Male</label>
+                        <input class="registration__radio" type="radio" id="sex2" name="choise" required>
+                        <label for="sex2">Female</label>
+                    </div>
 
-                    <section class="total_amount">
-                        <div class="total_amount__content">
-                            <div class="total_amount__top_part">
-                                <p class="total_amount__top_part__subtitle">SUB TOTAL <span>$900</span></p>
-                                <h3 class="total_amount__top_part__title">GRAND TOTAL <span>$900</span></h3>
-                            </div>
-                            <div class="total_amount__bottom_part">
-                                <hr>
-                                <a class="total_amount__checkout_button" href="registration.html">PROCEED TO
-                                    CHECKOUT</a>
-                            </div>
+                    <h4 class="registration__title">Login details</h4>
+                    <input class="registration__data" type="email" placeholder="Email" required>
+                    <input class="registration__data registration__data_pwd" type="password" placeholder="Password"
+                        required>
+                    <p class="registration__subtitle">Please use 8 or more characters, with at least 1 number and a
+                        mixture of uppercase and lowercase letters</p>
+                    <button class="registration__approval" type="submit">JOIN NOW
+                        <svg class="registration__approval_arrow" xmlns="http://www.w3.org/2000/svg" width="17"
+                            height="10" viewBox="0 0 17 10" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z"
+                                fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z"
+                                fill="white" />
+                        </svg></button>
+                </form>
+                <section class="right_side right_side_padding">
+                    <h2 class="right_side__title">LOYALTY HAS ITS PERKS</h2>
+                    <h2 class="right_side__title">Get in on the loyalty program where you can earn points and unlock
+                        serious perks. Starting with these as soon as you join:</h2>
+                    <ul class="right_side__list">
+                        <li class="right_side__list_li">15% off welcome offer</li>
+                        <li class="right_side__list_li">Free shipping, returns and exchanges on all orders
+                        </li>
+                        <li class="right_side__list_li">$10 off a purchase on your birthday
+                        </li>
+                        <li class="right_side__list_li">Early access to products</li>
+                        <li class="right_side__list_li">Exclusive offers & rewards</li>
 
-                        </div>
-                    </section>
-                </div>
+                    </ul>
+
+                </section>
             </section>
 
 

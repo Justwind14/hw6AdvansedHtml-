@@ -12,11 +12,15 @@
         cursor: pointer;
         border-color: $mainElementsColor;
         color: $mainElementsColor;
+        transition-property: 0.5s all;
+        transition-duration: 0.5s all;
     }
 
     &:active {
         background-color: $mainElementsColor;
         color: #fff;
+        transition-property: 0.5s all;
+        transition-duration: 0.5s all;
     }
 }
 
@@ -25,12 +29,16 @@
         cursor: pointer;
         border: 1px solid #fff;
         color: #fff;
+        transition-property: 0.5s all;
+        transition-duration: 0.5s all;
     }
 
     &:active {
         background-color: #fff;
         color: $mainElementsColor;
         border: 1px solid $mainElementsColor;
+        transition-property: 0.5s all;
+        transition-duration: 0.5s all;
     }
 
 
@@ -40,21 +48,15 @@
 
     &:hover {
         border-color: $mainElementsColor;
+        transition-property: 0.5s all;
+        transition-duration: 0.5s all;
     }
 
     &:focus {
         border-color: $mainElementsColor;
         outline: 1px solid $mainElementsColor;
+        transition-property: 0.5s all;
+        transition-duration: 0.5s all;
     }
 
-}
-
-// размеры
-
-@mixin left_basket_part_size {
-    width: 652px;
-}
-
-@mixin right_basket_part_size {
-    width: 360px;
 }
