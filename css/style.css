@@ -1422,7 +1422,7 @@
   }
 }
 /* PHONE */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .top {
     padding-left: calc(50% - 148px);
     padding-right: calc(50% - 148px);
@@ -1556,7 +1556,7 @@
   }
 }
 /* PHONE */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .new_arrivals {
     flex-wrap: wrap;
     min-height: 74px;
@@ -1646,7 +1646,7 @@
   }
 }
 /* PHONE */
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .new_arrivals {
     flex-wrap: wrap;
     min-height: 74px;
@@ -1773,7 +1773,7 @@
   }
 }
 /*   BASKET     PHONE */
-@media (max-width: 755px) {
+@media (max-width: 767px) {
   .under_head {
     text-align: center;
   }
@@ -1896,7 +1896,7 @@
   }
 }
 /*   REGISTRATION     PHONE */
-@media (max-width: 755px) {
+@media (max-width: 767px) {
   .registration {
     flex-direction: column;
     gap: 22px;
