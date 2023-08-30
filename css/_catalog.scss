@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'mixins';
+
 //                            arrivals
 
 
@@ -107,7 +108,7 @@
         }
 
         &__subtitle {
-            margin-top: 28.5px;
+            margin-top: 48.5px;
             margin-bottom: 32px;
             color: #5E5E5E;
             font-size: 14px;
@@ -127,6 +128,7 @@
 
         & hr {
             margin-top: 65px;
+            margin-bottom: 52px;
             width: 641px;
             border: 0;
             height: 1px;
@@ -141,11 +143,31 @@
     display: flex;
     justify-content: center;
     border: 1px solid #EAEAEA;
+    position: relative;
 
     &.center {
         padding-left: calc(50% - 558px);
         padding-right: calc(50% - 558px);
     }
+
+    &__slider {
+        position: absolute;
+        top: 45%;
+
+        &_sl1 {
+            left: 0;
+        }
+
+        &_sl2 {
+            right: 0;
+        }
+
+        &:hover path {
+            cursor: pointer;
+            fill: $mainElementsColor;
+        }
+    }
+
 }
 
 
@@ -160,7 +182,7 @@
     &__choose {
         text-align: left;
         padding-top: 13px;
-        padding-bottom: 64px;
+        padding-bottom: 48px;
         position: relative;
         z-index: 7;
         cursor: pointer;

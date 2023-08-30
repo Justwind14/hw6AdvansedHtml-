@@ -71,11 +71,10 @@
     height: 132px;
     display: flex;
     padding-top: 39px;
-    box-sizing: border-box;
 }
 
 .filter {
-    width: 355px;
+    width: 360px;
     position: relative;
     padding-top: 13px;
     z-index: 7;
@@ -119,7 +118,6 @@
         margin-top: 16px;
     }
 
-
     &__bag_head {
         display: flex;
         align-items: center;
@@ -161,7 +159,6 @@
 
     }
 }
-
 
 
 .offer_details {

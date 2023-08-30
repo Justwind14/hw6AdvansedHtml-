@@ -1,0 +1,268 @@
+/*   BASKET     TABLET */
+
+
+@media (max-width: 1024px) {
+
+    .under_head {
+        &.center {
+            padding-left: calc(50% - 368px);
+            padding-right: calc(50% - 368px);
+        }
+    }
+
+
+    .preparation_for_purchase {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &.center {
+            padding-left: calc(50% - 368px);
+            padding-right: calc(50% - 368px);
+        }
+    }
+
+    .left_basked_side {
+        width: $onePartOfSecurityPageSize+82px;
+    }
+
+    .basket_menu {
+        margin-bottom: 80px;
+        justify-content: center;
+        gap: 48px;
+        max-width: $onePartOfSecurityPageSize+82px;
+
+    }
+
+    .right_basket_side {
+        width: $onePartOfSecurityPageSize+82px;
+        display: flex;
+        gap: 16px;
+    }
+
+    .shipping_select {
+        padding-top: 0px;
+        padding-bottom: 128px;
+    }
+
+    .total_amount {
+        margin-top: 39px;
+    }
+
+}
+
+
+
+/*   BASKET     PHONE */
+
+@media (max-width: 755px) {
+
+    .under_head {
+        text-align: center;
+
+        &.center {
+            padding-left: calc(50% - 179px);
+            padding-right: calc(50% - 179px);
+        }
+    }
+
+
+    .preparation_for_purchase {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &.center {
+            padding-left: calc(50% - 179px);
+            padding-right: calc(50% - 179px);
+        }
+    }
+
+    .left_basked_side {
+        width: 358px;
+    }
+
+    .basket_item {
+
+        & img {
+            width: 135px;
+            height: 188px;
+        }
+
+        & figcaption {
+            font-size: 16px;
+        }
+
+        &__description {
+            padding: 12px 12px 35px 17px;
+            width: 100%;
+
+            &__top_part {
+                margin-bottom: 24px;
+            }
+
+            &__bottom_part {
+                gap: 3px;
+            }
+        }
+
+        &__product_characteristics {
+            font-size: 14px;
+        }
+
+        &__basket_price {
+            font-size: 14px;
+        }
+
+        &__window_count {
+            width: 24px;
+            height: 15px;
+            font-size: 10px;
+
+        }
+    }
+
+    .basket_menu {
+        margin-bottom: 57px;
+        justify-content: center;
+        gap: 9px;
+
+        &__options {
+            padding: 9px 37px;
+            font-size: 12px;
+            text-transform: lowercase;
+
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .right_basket_side {
+        width: 358px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .shipping_select {
+        padding-top: 0px;
+        padding-bottom: 48px;
+
+        &__button {
+            text-transform: lowercase;
+
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .total_amount {
+        margin-top: 0px;
+        margin-bottom: 96px;
+    }
+
+}
+
+
+
+
+
+
+/*   REGISTRATION    TABLET */
+
+
+@media (max-width: 1024px) {
+
+    .registration {
+        gap: 22px;
+
+        &.center {
+            padding-left: calc(50% - 368px);
+            padding-right: calc(50% - 368px);
+        }
+
+        & label[for="sex3"] {
+            display: inline-block;
+        }
+
+        &__radio {
+            &#sex3 {
+                display: inline-block;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .left_side {
+        width: 360px;
+
+        &_padding {
+            padding-bottom: 40px;
+        }
+    }
+
+
+
+    .right_side {
+        width: 354px;
+        display: flex;
+        gap: 16px;
+
+        &_padding {
+            padding-top: 64px;
+        }
+
+        &__title {
+            font-size: 16px;
+        }
+
+        &__list {
+            font-size: 16px;
+        }
+
+        &__title_special {
+            font-weight: 400;
+        }
+    }
+
+}
+
+
+
+
+/*   REGISTRATION     PHONE */
+
+@media (max-width: 755px) {
+
+    .registration {
+        flex-direction: column;
+        gap: 22px;
+
+        &.center {
+            padding-left: calc(50% - 179px);
+            padding-right: calc(50% - 179px);
+        }
+    }
+
+    .left_side {
+        width: 360px;
+    }
+
+    .right_side {
+        width: 360px;
+        flex-direction: column;
+
+        &__title_special {
+            font-weight: 300;
+        }
+
+        &_padding {
+            padding-top: 0px;
+            padding-bottom: 96px;
+        }
+    }
+
+
+}

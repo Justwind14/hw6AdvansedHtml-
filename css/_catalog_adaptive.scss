@@ -1,0 +1,149 @@
+/* TABLET */
+
+
+@media (max-width: 1024px) {
+
+    .new_arrivals {
+        &.center {
+            padding-left: calc(50% - 368px);
+            padding-right: calc(50% - 368px);
+        }
+    }
+
+    .catalog_offer {
+        &__image {
+            width: 466px;
+            height: 565px;
+        }
+    }
+
+    .catalog_main_content {
+        &__description_part {
+            top: 566px;
+            max-width: 768px;
+            border-left: none;
+            border-right: none;
+
+
+            &__subtitle {
+                margin-top: 32px;
+                max-width: 326px;
+            }
+
+            & hr {
+                width: 175px;
+                margin-top: 32px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .offer_details {
+        &__choose {
+            padding-bottom: 64px;
+        }
+    }
+
+    .content_items {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+
+        &.center {
+            padding-left: calc(50% - 368px);
+            padding-right: calc(50% - 368px);
+        }
+
+        &__item {
+            &_order3 {
+                display: none;
+            }
+
+            &_order1 {
+                order: 1;
+            }
+
+            &_order2 {
+                order: -1;
+            }
+        }
+    }
+
+}
+
+
+
+/* PHONE */
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .new_arrivals {
+        flex-wrap: wrap;
+        min-height: 74px;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+
+        &__title {
+            padding-top: 24px;
+            padding-bottom: 0;
+        }
+
+        &__bread_crumbs {
+            padding-top: 0px;
+            padding-bottom: 46px;
+        }
+
+        &.center {
+            padding-left: calc(50% - 179px);
+            padding-right: calc(50% - 179px);
+        }
+    }
+
+
+
+    .catalog_main_content {
+        &__description_part {
+            top: 455px;
+            max-width: 375px;
+        }
+    }
+
+    .catalog_offer {
+        &__image {
+            width: 374px;
+            height: 454px;
+        }
+    }
+
+
+    .content_items {
+        grid-template-columns: 1fr;
+        gap: 0;
+
+        &.center {
+            padding-left: calc(50% - 179px);
+            padding-right: calc(50% - 179px);
+        }
+
+        &__item {
+            &_order1 {
+                order: -1;
+            }
+
+            &_order2 {
+                display: none;
+            }
+
+            &_order3 {
+                display: block;
+            }
+        }
+
+        &.for_catalog {
+            padding-bottom: 64px;
+        }
+    }
+
+}

@@ -56,7 +56,6 @@
     }
 
     &__description {
-        box-sizing: border-box;
         padding: 22px 22px 62px 31px;
         width: 100%;
 
@@ -105,7 +104,7 @@
 
     &__window_count {
         border: 1px solid #EAEAEA;
-        text-align: right;
+        text-align: center;
         width: 44px;
         height: 25px;
         color: #656565;
@@ -156,6 +155,7 @@
 .shipping_select {
     padding-top: 113px;
     padding-bottom: 57px;
+    min-width: 360px;
 
     &__title {
         color: #222;
@@ -209,8 +209,8 @@
 
 .total_amount {
     background-color: #F5F3F3;
-    display: flex;
-    flex-direction: column;
+    min-width: 360px;
+    max-height: 214px;
 
     &__content {
         padding: 40px 34px 58px 34px;
@@ -282,13 +282,9 @@
 //                                 registration page
 
 
-
-
-
 .registration {
     display: flex;
-
-    gap: 128px;
+    justify-content: space-between;
 
     &__title {
         color: #222;
@@ -334,24 +330,30 @@
         font-style: normal;
         font-weight: 300;
         line-height: normal;
-
     }
+
 
     &__radio {
         margin-right: 5px;
         vertical-align: top;
+
+        &:checked {
+            accent-color: $mainElementsColor;
+        }
+
+        &#sex2 {
+            margin-left: 20px;
+        }
+
+        &#sex3 {
+            display: none;
+        }
+
     }
 
-    &__radio:checked {
-        accent-color: $mainElementsColor;
-
-
+    & label[for="sex3"] {
+        display: none;
     }
-
-
-    // input[required]:not(:checked) {
-    //     outline: 2px solid red;
-    // }
 
     &__approval {
         width: 167px;
@@ -366,7 +368,7 @@
         border: none;
         transition-property: 0.5s all;
         transition-duration: 0.5s all;
-        hw3AdvansedHtml- @include reverse_buttons_hover_and_active;
+        @include reverse_buttons_hover_and_active;
 
         &_arrow {
             margin-left: 20px;
@@ -378,6 +380,7 @@
     }
 
 }
+
 
 .left_side {
 
@@ -392,9 +395,7 @@
     }
 }
 
-#sex2 {
-    margin-left: 20px;
-}
+
 
 
 .right_side {
@@ -405,7 +406,6 @@
 
     &_padding {
         padding-top: 64px;
-
     }
 
     &__title {
